@@ -1,0 +1,6 @@
+**/dist
+**/.output
+**/.wxt
+**/migrations/committed
+**/*.tsbuildinfo
+package-lock.json

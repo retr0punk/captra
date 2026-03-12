@@ -1,0 +1,10 @@
+keys:
+  - &retr0punk age16cu5deprezqllunpc0s9s8r5qkrvn6dgzd7f563k6wqs3ay4rcwqfq8m60
+  - &ci age1y8fjdrc0chddz0gllx58lwz07h7rxvlygwux2tcztduay3vcqcrqk9jt3y
+
+creation_rules:
+  - path_regex: env\.(development|test|production)\.json$
+    unencrypted_regex: ^(NODE_ENV|NODE_OPTIONS|HOST|PORT|LOG_LEVEL|BASE_URL|SMTP_HOST|SMTP_FROM|OTEL_SERVICE_NAME|OTEL_SDK_DISABLED)$
+    age:
+      - *retr0punk
+      - *ci

@@ -1,0 +1,33 @@
+{
+  "name": "captra",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write .",
+    "dev": "run-p dev:api dev:extension",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:extension": "sops exec-env apps/api/env.development.json 'node scripts/wait-on-api.ts' && npm run dev --workspace=apps/extension"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
+    "@types/node": "^24.12.0",
+    "@types/wait-on": "^5.3.4",
+    "editorconfig-checker": "^6.1.1",
+    "lefthook": "^2.1.4",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "wait-on": "^9.0.4"
+  },
+  "engines": {
+    "node": "24.x",
+    "npm": "11.x",
+    "pnpm": "please-use-npm",
+    "yarn": "please-use-npm"
+  }
+}

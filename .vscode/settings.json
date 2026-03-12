@@ -1,0 +1,23 @@
+{
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "NOTE"],
+  "files.autoSave": "onFocusChange",
+  "css.customData": [".vscode/tailwind.json"],
+  "prettier.documentSelectors": ["**/*.svg"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
+  "files.readonlyInclude": {
+    "package-lock.json": true
+  },
+  "files.associations": {
+    ".gmrc": "jsonc",
+    "crontab": "crontab"
+  },
+  "search.exclude": {
+    "package-lock.json": true
+  },
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman"
+}

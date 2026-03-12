@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.node.jsonc",
+  "compilerOptions": { "rootDir": "./src" },
+  "include": ["src"]
+}

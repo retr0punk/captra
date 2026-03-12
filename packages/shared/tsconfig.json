@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.es2024.jsonc",
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "declarationMap": true,
+    "rootDir": "./src",
+    "inlineSources": true,
+    "inlineSourceMap": true,
+    "outDir": "./dist",
+    "noEmitOnError": true
+  },
+  "include": ["src"]
+}

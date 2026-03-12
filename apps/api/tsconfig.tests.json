@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.node.jsonc",
+  "include": ["tests", "src"]
+}

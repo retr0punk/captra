@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "hogashi.crontab-syntax-highlight",
+    "ms-azuretools.vscode-containers",
+    "signageos.signageos-vscode-sops"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@captra/shared",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "clean": "node -e \"['dist', 'tsconfig.tsbuildinfo'].forEach(p => require('fs').rmSync(p, { recursive: true, force: true }))\""
+  },
+  "exports": {
+    "./*": {
+      "import": "./dist/*.js",
+      "types": "./dist/*.d.ts"
+    }
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

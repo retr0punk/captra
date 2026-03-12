@@ -1,0 +1,12 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "extends": "./tsconfig.es2024.jsonc",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "Node16",
+    // No emission needed since Node.js can run TS files directly now
+    "noEmit": true,
+    // Disables TypeScript features like enums, namespaces etc. that Node.js cannot strip away
+    "erasableSyntaxOnly": true
+  }
+}

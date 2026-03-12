@@ -1,0 +1,25 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "moduleDetection": "force",
+    // Needed for transpilation; implies `"allowImportingTsExtensions": true`
+    "rewriteRelativeImportExtensions": true,
+    "checkJs": true,
+    // WYSIWYG for type imports — requires the use of "type" keyword for type-only imports and strips type-only imports when transpiling
+    "verbatimModuleSyntax": true,
+    // Enables CommonJS ↔ ES module interop; used for standard interop when emitting, and for synthetic default imports when `noEmit: true`
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "skipLibCheck": true
+  }
+}
